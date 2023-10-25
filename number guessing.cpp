@@ -43,7 +43,6 @@ void Play()
 {
     srand(time(0));
     int random_number = ( rand() % 10000 ) + 1;
-    cout << random_number << endl;
     int guess = 0;
     int moves = 0;
     do{
@@ -55,6 +54,7 @@ void Play()
         {
             cout << endl;
             cout << "You have reached your limit" << endl;
+            cout << "You are wrong " << random_number << " is the number" << endl;
             limit();
         }
         else if(guess > random_number)
